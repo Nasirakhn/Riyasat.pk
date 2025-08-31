@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="ur" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>آپ کی نیوز ویب سائٹ — تازہ خبریں، بریکنگ، ویڈیوز</title>
+  <meta name="description" content="اردو میں تازہ ترین خبریں: پاکستان، دنیا، کھیل، کاروبار، ٹیکنالوجی اور تفریح۔" />
+  <meta name="theme-color" content="#111827" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="آپ کی نیوز ویب سائٹ" />
+  <meta property="og:description" content="اردو میں تازہ ترین خبریں" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://example.com" />
+  <meta property="og:image" content="https://example.com/og.jpg" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@yourhandle" />
+
+  <!-- Minimal, mobile-first CSS (no build tools needed) -->
+  <style>
+    :root { --bg:#0b1220; --card:#111827; --muted:#94a3b8; --text:#e5e7eb; --accent:#22c55e; }
+    * { box-sizing: border-box }
+    html,body { margin:0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Noto Naskh Arabic UI, "Noto Nastaliq Urdu", Arial, sans-serif; background: var(--bg); color: var(--text); }
+    a{ color:inherit; text-decoration:none }
+    .container{ max-width:1100px; margin:auto; padding: 0 16px }
+    header{ position:sticky; top:0; z-index:10; background:rgba(11,18,32,.8); backdrop-filter:saturate(1.2) blur(10px); border-bottom:1px solid #1f2937 }
+    .row{ display:flex; gap:12px; align-items:center; }
+    .space{ flex:1 }
+    .logo{ font-weight:800; letter-spacing:.5px }
+    .pill{ padding:8px 12px; border:1px solid #1f2937; border-radius:999px }
+    nav{ display:none }
+    .nav-open nav{ display:block }
+    nav a{ padding:10px 12px; display:inline-block; color:var(--muted) }
+    nav a.active, nav a:hover{ color:#fff }
+    .hero{ display:grid; grid-template-columns:1fr; gap:16px; padding:20px 0 }
+    .hero-card{ background:linear-gradient(180deg, rgba(34,197,94,.12), rgba(255,255,255,0)); border:1px solid #1f2937; border-radius:18px; overflow:hidden }
+    .hero img{ width:100%; height:220px; object-fit:cover }
+    .hero .content{ padding:14px }
+    .badge{ font-size:.75rem; color:#10b981 }
+    h1{ font-size:1.25rem; margin:6px 0 8px }
+    .muted{ color:var(--muted); font-size:.9rem }
+    .grid{ display:grid; grid-template-columns:1fr; gap:14px }
+    .card{ background:var(--card); border:1px solid #1f2937; border-radius:16px; overflow:hidden }
+    .card img{ width:100%; height:160px; object-fit:cover }
+    .card .content{ padding:12px }
+    .ad-slot{ border:1px dashed #334155; border-radius:12px; padding:18px; text-align:center; color:#94a3b8; }
+    footer{ margin-top:28px; padding:24px 0; border-top:1px solid #1f2937; color:#94a3b8; font-size:.9rem }
+
+    /* Desktop */
+    @media(min-width:900px){
+      .hero{ grid-template-columns:1.2fr .8fr }
+      .grid{ grid-template-columns: repeat(3, 1fr) }
+      nav{ display:block !important }
+      #menuBtn{ display:none }
+    }
+  </style>
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsMediaOrganization",
+    "name": "آپ کی نیوز ویب سائٹ",
+    "url": "https://example.com",
+    "logo": "https://example.com/logo.png",
+    "sameAs": ["https://facebook.com/yourpage","https://twitter.com/yourhandle"]
+  }
+  </script>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="row" style="padding:10px 0">
+        <button id="menuBtn" class="pill" aria-label="Menu">☰</button>
+        <a class="logo" href="/">نیوز ٹائم</a>
+        <div class="space"></div>
+        <a class="pill" href="#" title="Subscribe">🔔 سبسکرائب</a>
+      </div>
+      <nav>
+        <div class="row" style="flex-wrap:wrap; padding-bottom:10px">
+          <a class="active" href="#">تازہ ترین</a>
+          <a href="#">پاکستان</a>
+          <a href="#">دنیا</a>
+          <a href="#">کھیل</a>
+          <a href="#">کاروبار</a>
+          <a href="#">ٹیکنالوجی</a>
+          <a href="#">تفریح</a>
+          <a href="#">ویڈیوز</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Hero -->
+    <section class="hero">
+      <article class="hero-card">
+        <img src="https://images.unsplash.com/photo-1545987796-200677ee1011?q=80&w=1400&auto=format&fit=crop" alt="Breaking News" />
+        <div class="content">
+          <span class="badge">بریکنگ</span>
+          <h1><a href="#">اسمبلی اجلاس آج: اہم فیصلوں کی توقع</a></h1>
+          <p class="muted">اپڈیٹ: 10 منٹ قبل • رپورٹ: نیوز ڈیسک</p>
+        </div>
+      </article>
+      <aside class="ad-slot">اشتہار کیلئے جگہ (300×250) — بعد میں AdSense کوڈ چسپاں کریں</aside>
+    </section>
+
+    <!-- Cards Grid -->
+    <section class="grid">
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1400&auto=format&fit=crop" alt="Pakistan" />
+        <div class="content">
+          <span class="badge">پاکستان</span>
+          <h2 style="margin:6px 0 8px; font-size:1.05rem"><a href="#">بلوچستان میں بارشوں کا نیا سلسلہ</a></h2>
+          <p class="muted">2 گھنٹے قبل</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1518544801976-3e188ea4df88?q=80&w=1400&auto=format&fit=crop" alt="World" />
+        <div class="content">
+          <span class="badge">دنیا</span>
+          <h2 style="margin:6px 0 8px; font-size:1.05rem"><a href="#">عالمی منڈی میں تیل کی قیمتوں میں کمی</a></h2>
+          <p class="muted">4 گھنٹے قبل</p>
+        </div>
+      </article>
+      <article class="card">
+        <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=1400&auto=format&fit=crop" alt="Sports" />
+        <div class="content">
+          <span class="badge">کھیل</span>
+          <h2 style="margin:6px 0 8px; font-size:1.05rem"><a href="#">ٹی ٹوئنٹی سیریز: قومی ٹیم کی جیت</a></h2>
+          <p class="muted">کل</p>
+        </div>
+      </article>
+    </section>
+
+    <section style="margin:18px 0">
+      <div class="ad-slot">ہیڈر/انفیڈ اشتہار کیلئے جگہ (728×90 یا 320×100)</div>
+    </section>
+
+    <!-- Latest list -->
+    <section aria-labelledby="latestHeading" style="margin-bottom:30px">
+      <h2 id="latestHeading" style="font-size:1.1rem; margin:12px 0">تازہ ترین</h2>
+      <div class="card" style="padding:10px">
+        <article style="padding:8px 0; border-bottom:1px solid #1f2937">
+          <a href="#">کراچی اسٹاک ایکسچینج میں تیزی</a>
+          <div class="muted">5 منٹ قبل</div>
+        </article>
+        <article style="padding:8px 0; border-bottom:1px solid #1f2937">
+          <a href="#">محکمہ موسمیات کی نئی پیشگوئی</a>
+          <div class="muted">30 منٹ قبل</div>
+        </article>
+        <article style="padding:8px 0">
+          <a href="#">تعلیمی بورڈ کے نتائج کا اعلان</a>
+          <div class="muted">1 گھنٹہ قبل</div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container row" style="justify-content:space-between; align-items:flex-start; gap:20px">
+      <div>
+        © <span id="year"></span> نیوز ٹائم • تمام حقوق محفوظ ہیں
+        <div style="margin-top:6px">پرائیویسی • رابطہ • ہمارے بارے میں</div>
+      </div>
+      <form class="row" onsubmit="event.preventDefault(); alert('شکریہ! آپ سبسکرائب ہو گئے ہیں.');">
+        <input type="email" placeholder="اپنا ای میل لکھیں" required
+               style="padding:10px 12px; border-radius:10px; background:#0b1220; border:1px solid #1f2937; color:#e5e7eb; min-width:220px" />
+        <button class="pill" type="submit" style="background:var(--accent); border-color:transparent; color:#06240f">سبسکرائب</button>
+      </form>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const header = document.querySelector('header');
+    document.getElementById('menuBtn').addEventListener('click',()=>{
+      header.classList.toggle('nav-open');
+    });
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- How to deploy (quick notes):
+    1) اس فائل کو index.html کے نام سے محفوظ کریں۔
+    2) GitHub پر نیا رِپو بنائیں (Mobile GitHub App سے بھی ممکن) اور یہ فائل اپ لوڈ کریں۔
+    3) Netlify یا Vercel کا فری اکاؤنٹ بنائیں اور رِپو کنیکٹ کر کے فوراً ڈیپلائی کریں۔
+    4) بعد میں custom ڈومین جوڑیں (مثلاً news-xyz.com) — کم قیمت پر Namecheap/Google Domains سے۔
+    5) AdSense کیلئے اوپر کی ad-slot جگہوں پر کوڈ پیسٹ کریں (منظوری کے بعد)۔
+    6) آر ایس ایس/سائٹ میپ: simple-sitemap.xml شامل کریں یا Netlify پلگ اِن استعمال کریں۔
+    7) Google News میں شامل ہونے کیلئے: مستقل اپ ڈیٹس، بائی لائن، رابطہ، About صفحہ، اور واضح تاریخ/وقت۔
+  -->
+</body>
+</html>
