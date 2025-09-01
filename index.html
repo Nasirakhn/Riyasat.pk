@@ -1,106 +1,97 @@
-
 <!DOCTYPE html>
 <html lang="ur" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ریاست پی کے نیوز سائٹ</title>
+  <title>ریاست پی کے نیوز</title>
   <style>
     body {
-      font-family: 'Noto Nastaliq Urdu', 'Tahoma', sans-serif;
+      font-family: 'Noto Nastaliq Urdu', serif;
+      background: #f8f9fa;
       margin: 0;
       padding: 0;
-      background: #f4f4f4;
-      color: #222;
     }
     header {
       background: #b30000;
-      color: white;
-      padding: 20px;
+      color: #fff;
       text-align: center;
-      font-size: 24px;
-      font-weight: bold;
+      padding: 15px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+    header p {
+      margin: 5px 0 0;
+      font-size: 16px;
     }
     nav {
       background: #333;
-      color: white;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
       padding: 10px;
+      text-align: center;
     }
     nav a {
-      color: white;
+      color: #fff;
+      margin: 0 10px;
       text-decoration: none;
-      font-weight: bold;
     }
-    .breaking-news {
-      background: yellow;
-      color: black;
-      padding: 10px;
-      font-weight: bold;
-      text-align: center;
-      border-bottom: 2px solid #b30000;
-    }
-    .container {
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      gap: 20px;
+    section.news {
+      max-width: 800px;
+      margin: 20px auto;
+      background: #fff;
       padding: 20px;
-    }
-    .news {
-      background: white;
-      padding: 15px;
       border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      margin-bottom: 20px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
     }
-    .sidebar {
-      background: white;
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    section.news h2 {
+      color: #b30000;
+    }
+    section.news p {
+      line-height: 1.8;
+      font-size: 18px;
+    }
+    section.news img {
+      width: 100%;
+      margin-top: 15px;
+      border-radius: 6px;
     }
     footer {
-      background: #333;
-      color: white;
+      background: #222;
+      color: #ddd;
       text-align: center;
-      padding: 10px;
-      margin-top: 20px;
+      padding: 15px;
+      margin-top: 30px;
     }
   </style>
 </head>
 <body>
-  <header>ریاست پی کے نیوز سائٹ</header>
+  <header>
+    <h1>ریاست پی کے نیوز</h1>
+    <p>ریاست کی سنو، عوام کی سنو کیونکہ ریاست عوام ہے</p>
+  </header>
+
   <nav>
-    <a href="#">اہم خبریں</a>
+    <a href="#">صفحہ اول</a>
     <a href="#">پاکستان</a>
-    <a href="#">دنیا</a>
+    <a href="#">عالمی خبریں</a>
     <a href="#">کھیل</a>
-    <a href="#">کاروبار</a>
+    <a href="#">رابطہ</a>
   </nav>
-  <div class="breaking-news">تازہ ترین: آج کی سب سے بڑی خبر — ریاست عوام ہے!</div>
-  <div class="container">
-    <div>
-      <div class="news">
-        <h2>اہم خبر: وزیراعظم کا خطاب</h2>
-        <p>وزیراعظم نے آج عوام سے خطاب کرتے ہوئے کہا کہ ریاست کا مقصد عوام کی خدمت ہے۔ مزید اقدامات کا اعلان جلد کیا جائے گا۔</p>
-      </div>
-      <div class="news">
-        <h2>کھیلوں کی خبر: پاکستان کی کامیابی</h2>
-        <p>پاکستان نے کرکٹ میچ میں شاندار کامیابی حاصل کی۔ شائقین کا جوش و خروش دیدنی تھا۔</p>
-      </div>
-    </div>
-    <div class="sidebar">
-      <h3>تازہ خبریں</h3>
-      <ul>
-        <li>مہنگائی میں کمی کی امید</li>
-        <li>تعلیمی اصلاحات کا اعلان</li>
-        <li>بجلی کے نرخوں میں کمی</li>
-        <li>نئی ٹیکنالوجی کی آمد</li>
-      </ul>
-    </div>
-  </div>
-  <footer>ریاست کی سنو، عوام کی سنو کیونکہ ریاست عوام ہے © 2025</footer>
+
+  <section class="news">
+    <h2>تازہ ترین: پنجاب میں تاریخی سیلاب، 2 ملین متاثر</h2>
+    <p>
+      پنجاب کے رَوی، چناب اور ستلج دریا ریکارڈ سطح کے بہاؤ پر پہنچ گئے ہیں،
+      جس کے نتیجے میں تقریباً 2 ملین لوگ متاثر ہوئے ہیں۔ حکام نے ریلیف کیمپوں میں
+      منتقلیاں شروع کر دی ہیں، اور کشتیوں کے ذریعے لوگوں کو محفوظ مقامات تک پہنچایا جا رہا ہے۔
+      پاکستان میں بارشیں رواں سال گزشتہ سال سے 26.5 فیصد زیادہ ہیں، جو غذائی بحران کا خطرہ بڑھا رہی ہیں۔
+      اب تک 849 افراد ہلاک اور 1,130 سے زائد زخمی ہوئے ہیں۔
+    </p>
+    <img src="https://gdb.voanews.com/01000000-0aff-0242-90a9-08dcbb52ce1c_w1200_r1.jpg" alt="پنجاب میں سیلاب">
+  </section>
+
+  <footer>
+    <p>© 2025 ریاست پی کے نیوز | تمام حقوق محفوظ ہیں</p>
+  </footer>
 </body>
 </html>
